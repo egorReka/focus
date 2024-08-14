@@ -1,20 +1,62 @@
+.nav {
+  @include media-tablet {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s linear;
+
+    &--active {
+      grid-template-rows: 1fr;
+    }
+  }
+
+  @include media-desktop {
+    position: static;
+    grid-template-rows: 1fr;
+  }
+}
+
+.nav__collapse-wrapper {
+  @include media-tablet {
+    background-color: $bg-page;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  @include media-desktop {
+    min-height: auto;
+    overflow: visible;
+  }
+}
+
 .nav__list {
   @include reset-list;
-
   display: grid;
   align-items: center;
   justify-content: flex-start;
-  gap: 10px;
   max-width: 60%;
   margin: 30px 10px 0;
 
   @include media-tablet {
     display: flex;
     flex-wrap: wrap;
+    gap: 5px;
+    margin: 0 auto;
+    max-width: 100%;
+
+  }
+
+  @include media-desktop {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 20px;
     max-width: none;
     margin: 0;
+    min-height: auto;
+    overflow: visible;
   }
 }
 
@@ -22,10 +64,12 @@
   display: block;
   font-weight: 500;
   font-size: 16px;
+  font-weight: 600;
   line-height: 1.15;
   text-transform: capitalize;
   text-decoration: none;
   color: inherit;
+  padding: 8px 10px;
 
   &:hover,
   &:focus {
@@ -34,5 +78,9 @@
 
   &:active {
     opacity: 0.5;
+  }
+
+  @include media-tablet {
+    padding: 5px 10px;
   }
 }

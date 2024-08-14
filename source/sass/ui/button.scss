@@ -8,21 +8,17 @@
   user-select: none;
   cursor: pointer;
 
+  &:hover,
+  &:focus-visible {
+    opacity: 0.6;
+  }
 
-  // &:hover {
-  //   //
-  // }
+  &:active {
+    opacity: 0.3;
+  }
 
-  // &:focus-visible {
-  //   //
-  // }
-
-  // &:active {
-  //   //
-  // }
-
-  // &:disabled,
-  // &:not([type="button"]):not([type="submit"]):not([href]) {
-  //   //
-  // }
+  &:disabled,
+  &:not([type="button"]):not([type="submit"]):not([href]) {
+    opacity: 0.3;
+  }
 }
