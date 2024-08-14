@@ -1,0 +1,17 @@
+/* Vendor */
+@import "vendor/normalize";
+
+/* GLOBAL */
+@import "./bootstrap";
+@import "./global/global";
+@import "./global/fonts";
+@import "./global/visually-hidden";
+@import "./global/container";
+
+/* UI */
+@import "./ui/button";
+@import "./ui/title";
+
+/* BLOCKS */
+@import "./blocks/page";
+
