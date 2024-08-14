@@ -1,29 +1,32 @@
-/* Light */
+/* geologica-light */
 @font-face {
   font-display: swap;
-  font-family: "Manrope";
+  font-family: 'Geologica';
   font-style: normal;
-  font-weight: $font-weight-light;
-  src:
-    url("../fonts/Manrope-Light.woff2") format("woff2")
+  font-weight: 300;
+  src: url('../fonts/geologica-v1-cyrillic_cyrillic-ext_latin-300.woff2') format('woff2');
 }
-
-/* Regular */
+/* geologica-regular */
 @font-face {
   font-display: swap;
-  font-family: "Manrope";
+  font-family: 'Geologica';
   font-style: normal;
-  font-weight: $font-weight-regular;
-  src:
-    url("../fonts/Manrope-Regular.woff2") format("woff2")
+  font-weight: 400;
+  src: url('../fonts/geologica-v1-cyrillic_cyrillic-ext_latin-regular.woff2') format('woff2');
 }
-
-/* Medium */
+/* geologica-medium */
 @font-face {
   font-display: swap;
-  font-family: "Manrope";
+  font-family: 'Geologica';
   font-style: normal;
-  font-weight: $font-weight-medium;
-  src:
-    url("../fonts/Manrope-Medium.woff2") format("woff2")
+  font-weight: 500;
+  src: url('../fonts/geologica-v1-cyrillic_cyrillic-ext_latin-500.woff2') format('woff2');
+}
+/* geologica-bold */
+@font-face {
+  font-display: swap;
+  font-family: 'Geologica';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/geologica-v1-cyrillic_cyrillic-ext_latin-700.woff2') format('woff2');
 }

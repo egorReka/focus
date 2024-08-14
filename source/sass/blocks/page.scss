@@ -10,12 +10,12 @@
   min-block-size: 100%;
   grid-template-rows: 1fr auto;
 
-  // font-family: $font-family;
-  // font-weight: 400;
-  // font-size: 14px;
-  // line-height: 143%;
-  // background-color: $bg-page;
-  // color: $text;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.15;
+  background-color: $bg-page;
+  color: $text;
 
   // @include media-tablet {
   //   font-size: 16px;
@@ -26,4 +26,8 @@
   //   font-size: 16px;
   //   line-height: 162%;
   // }
+}
+
+.page__header {
+  margin: 20px 0;
 }

@@ -4,12 +4,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Swisslife-AccountsPlus.ru</title>
+  <!-- TODO: Нужна фавиконка размером 32х32px или лучше в svg -->
+  <!-- мета описание и ключевые слова, подбирать их можно на вордстате -->
+  <title>ДЦ Фокус</title>
   <link rel="stylesheet" href="sass/style.scss">
 </head>
 
 <body class="page__body">
 
+  <div class="container">
+    <header class="page__header header">
+      <p class="header__logo logo">
+        <!-- TODO: у логотипа маленькое разрешение, желательно сделать в svg и постараться уменьшить содержимое, в логотипе не желателен текст, логотип можно представить как иконку, соцсети например  -->
+        <img class="logo__image" src="img/logo.png" width="137" height="32" alt="Детский центр Фокус">
+      </p>
+
+      <div class="header__container">
+        <div class="header__collapse-wrapper">
+
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="#">Направления</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Филиалы</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Оплата</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Тренеры</a></li>
+            </ul>
+          </nav>
+
+          <div class="header__wrapper">
+            <a class="header__phone" href="tel:+79168887580">+7 (916) 888-75-80</a>
+            <ul class="header__social social">
+              <li class="social__item">
+                <a class="social__link" href="https://taplink.cc/fokus_dance_club">
+                  <svg class="social__icon" role="img" width="32" height="32" aria-label="Сылка на Телеграм.">
+                    <use href="/__spritemap#sprite-tg"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://vk.com/dancefocus">
+                  <svg class="social__icon" role="img" width="32" height="32" aria-label="Сылка на Вконтакте.">
+                    <use href="/__spritemap#sprite-vk"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <button class="header__button-record button" type="button">Записаться</button>
+          </div>
+        </div>
+      </div>
+
+      <button class="header__button nav-button button" type="button" aria-label="Открыть меню">
+        <div class="nav-button__wrapper">
+          <span class="nav-button__line"></span>
+        </div>
+
+        <span class="nav-button__text">Меню</span>
+      </button>
+
+    </header>
+  </div>
+
+
+
+  <main class="main"></main>
+  <footer class="footer"></footer>
+
+  <script src="js/main.js" type="module"></script>
 </body>
 
 </html>

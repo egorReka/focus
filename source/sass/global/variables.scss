@@ -1,10 +1,11 @@
 /* Font familie */
-$font-family-manrope: "Manrope", "Arial", sans-serif;
+$font-family: "Geologica", "Arial", sans-serif;
 
 /* Font weight */
 $font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-medium: 500;
+$font-weight-bold: 700;
 
 /* Width */
 $width-phone: 320px;
@@ -16,15 +17,15 @@ $Margins-phone: 15px;
 $Margins-tablet: 45px;
 $Margins-desktop: 100px;
 
-/* Color space */
-// $bg-page: #ffffff;
-// $text: #000000;
-// $text-30: rgba(0, 0, 0, 0.3);
-// $text-accent: #7b77f0;
-// $title: #000000;
-// $bg-form: #e8e8e8;
-// $input-border: #b5b0b0;
 
-  // Color button
-  // $bg-button: #645fe8;
-  // $text-button: #ffffff;
+/* Colors */
+$white: #ffffff;
+
+
+/* Color space */
+$bg-page: #ffffff;
+$text: #000000;
+
+$bg-button: #cd52a8;
+$text-button: #ffffff;
+
