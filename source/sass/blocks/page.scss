@@ -10,10 +10,19 @@
   grid-template-rows: auto 1fr;
   font-family: $font-family;
   font-weight: 400;
-  font-size: 14px;
+  // font-size: 18px;
+  font-size: clamp(16px, 2vw, 28px); // TODO тестируем
   line-height: 1.15;
   background-color: $bg-page;
   color: $text;
+
+  @include media-tablet {
+    line-height: 1.25;
+  }
+
+  @include media-desktop {
+    line-height: 1.35;
+  }
 }
 
 .page__header {
@@ -32,7 +41,11 @@
   height: 100%;
 }
 
-// temp
+.page__main {
+  padding: 40px 0;
+}
+
+// TODO temp
 .main {
   overflow-x: hidden;
 }
