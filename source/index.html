@@ -12,69 +12,122 @@
 
 <body class="page__body">
 
-  <div class="container">
-    <header class="page__header header">
-      <p class="header__logo logo">
-        <!-- TODO: у логотипа маленькое разрешение, желательно сделать в svg и постараться уменьшить содержимое, в логотипе не желателен текст, логотип можно представить как иконку, соцсети например  -->
-        <img class="logo__image" src="img/logo.png" width="137" height="32" alt="Детский центр Фокус">
-      </p>
-
+  <header class="page__header header">
+    <div class="page__header-container container">
       <div class="header__container">
-        <div class="header__collapse-wrapper">
+        <p class="header__logo logo">
+          <!-- TODO: у логотипа маленькое разрешение, желательно сделать в svg и постараться уменьшить содержимое, в логотипе не желателен текст, логотип можно представить как иконку, соцсети например  -->
+          <img class="logo__image" src="img/logo.png" width="137" height="32" alt="Детский центр Фокус">
+        </p>
 
-          <nav class="header__nav nav">
-            <div class="nav__collapse-wrapper">
-              <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="#">Направления</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Филиалы</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Оплата</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Тренеры</a></li>
+        <div class="header__nav-container">
+          <div class="header__collapse-wrapper">
+
+            <nav class="header__nav nav">
+              <div class="nav__collapse-wrapper">
+                <ul class="nav__list">
+                  <li class="nav__item"><a class="nav__link" href="#">Направления</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Филиалы</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Оплата</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Тренеры</a></li>
+                </ul>
+              </div>
+            </nav>
+
+            <div class="header__wrapper">
+              <a class="header__phone" href="tel:+79168887580">+7 (916) 888-75-80</a>
+              <ul class="header__social social">
+                <li class="social__item">
+                  <a class="social__link" href="https://taplink.cc/fokus_dance_club">
+                    <svg class="social__icon" role="img" width="32" height="32" aria-label="Сылка на Телеграм.">
+                      <use href="/__spritemap#sprite-tg"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="https://vk.com/dancefocus">
+                    <svg class="social__icon" role="img" width="32" height="32" aria-label="Сылка на Вконтакте.">
+                      <use href="/__spritemap#sprite-vk"></use>
+                    </svg>
+                  </a>
+                </li>
               </ul>
+              <button class="header__button-record button" type="button">Записаться</button>
             </div>
-          </nav>
-
-          <div class="header__wrapper">
-            <a class="header__phone" href="tel:+79168887580">+7 (916) 888-75-80</a>
-            <ul class="header__social social">
-              <li class="social__item">
-                <a class="social__link" href="https://taplink.cc/fokus_dance_club">
-                  <svg class="social__icon" role="img" width="32" height="32" aria-label="Сылка на Телеграм.">
-                    <use href="/__spritemap#sprite-tg"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="https://vk.com/dancefocus">
-                  <svg class="social__icon" role="img" width="32" height="32" aria-label="Сылка на Вконтакте.">
-                    <use href="/__spritemap#sprite-vk"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-            <button class="header__button-record button" type="button">Записаться</button>
           </div>
         </div>
+
+        <button class="header__button nav-button button" type="button" aria-label="Открыть меню">
+          <div class="nav-button__wrapper">
+            <span class="nav-button__line"></span>
+          </div>
+
+          <span class="nav-button__text">Меню</span>
+        </button>
       </div>
 
-      <button class="header__button nav-button button" type="button" aria-label="Открыть меню">
-        <div class="nav-button__wrapper">
-          <span class="nav-button__line"></span>
+      <section class="hero">
+
+        <div class="hero__conteiner">
+          <div class="hero__content">
+            <p class="hero__text">Обучение танцам, бальные танцы, современные направления, спортивные танцы, шахматы и
+              многое другое</p>
+            <h1 class="hero__title">Профессиональная школа танцев для детей и взрослых</h1>
+          </div>
+
+          <a class="hero__link" href="#">Смотреть направления</a>
+
+          <div class="hero__swiper hero-swiper">
+            <ul class="hero__list swiper-wrapper">
+              <li class="hero__item swiper-slide">
+                <img class="hero__image" src="./img/hero/hero-1-mobile@1x.jpg" width="280" height="169" alt="">
+              </li>
+              <li class="hero__item swiper-slide">
+                <img class="hero__image" src="./img/hero/hero-2-mobile@1x.jpg" width="280" height="169" alt="">
+              </li>
+              <li class="hero__item swiper-slide">
+                <img class="hero__image" src="./img/hero/hero-3-mobile@1x.jpg" width="280" height="169" alt="">
+              </li>
+              <li class="hero__item swiper-slide">
+                <img class="hero__image" src="./img/hero/hero-4-mobile@1x.jpg" width="280" height="169" alt="">
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <span class="nav-button__text">Меню</span>
-      </button>
+      </section>
+    </div>
+  </header>
 
-    </header>
-  </div>
+  <main class="page__main main">
+  </main>
 
-
-
-  <main class="main"></main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, iure! Quia deleniti aliquid
+    quas accusamus optio nam vitae, cumque, excepturi magnam voluptas officiis at voluptatem ad laboriosam itaque, vel
+    facere!
+  </footer>
 
   <script src="js/main.js" type="module"></script>
 </body>
 
 </html>
+
+
+<!-- <picture>
+  <source type="image/webp" media="(min-width: 1440px)"
+    srcset="img/hero/hero-1-desktop@1x.webp, img/hero/hero-1-desktop@2x.webp 2x" width="1360" height="600">
+  <source type="image/webp" media="(min-width: 768px)"
+    srcset="img/hero/hero-1-tablet@1x.webp, img/hero/hero-1-tablet@2x.webp 2x" width="688" height="360">
+  <source srcset="img/hero/hero-1-mobile@1x.webp 1x, img/hero/hero-1-mobile@2x.webp 2x" type="image/webp"
+    width="250" height="169">
+
+  <source type="image/jpg" media="(min-width: 1440px)"
+    srcset="img/hero/hero-1-desktop@1x.jpg, img/hero/hero-1-desktop@2x.jpg 2x" width="1360" height="600">
+  <source type="image/jpg" media="(min-width: 768px)"
+    srcset="img/hero/hero-1-tablet@1x.jpg, img/hero/hero-1-tablet@2x.jpg 2x" width="688" height="360">
+  <img class="reviews-card__image" src="img/hero/hero-1-mobile@1x.jpg"
+    srcset="img/hero/hero-1-mobile@2x.jpg 2x" width="280" height="169" alt="">
+</picture> -->
