@@ -46,7 +46,7 @@
   background-color: $bg-page;
   width: 100%;
   transition: grid-template-rows 0.3s linear;
-  z-index: 1;
+  z-index: 3;
 
   &--active {
     grid-template-rows: 1fr;
@@ -61,7 +61,7 @@
 .header__collapse-wrapper {
   display: grid;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   min-height: 0;
   overflow: hidden;
 
@@ -76,13 +76,14 @@
 
 .header__wrapper {
   display: grid;
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
+  margin-bottom: 40px;
 
   @include media-tablet {
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto 1fr;
+    display: flex;
+    align-items: center;
+    gap: 15px;
     margin: 0 0 0 auto;
   }
 
@@ -102,6 +103,7 @@
   font-size: 18px;
   line-height: 1.15;
   text-align: center;
+  transition: opacity 0.2s ease-in-out;
 
   &:hover,
   &:focus {
@@ -113,16 +115,14 @@
   }
 
   @include media-tablet {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 1;
     text-align: start;
   }
 }
 
 .header__button-record  {
   display: block;
-  padding: 8px 10px;
-  border-radius: 30px;
+  padding: 12px 25px;
   max-width: 400px;
+  border-radius: 30px;
   text-transform: capitalize;
 }
