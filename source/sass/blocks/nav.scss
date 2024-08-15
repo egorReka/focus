@@ -46,7 +46,6 @@
     gap: 5px;
     margin: 0 auto;
     max-width: 100%;
-
   }
 
   @include media-desktop {
@@ -69,6 +68,7 @@
   text-transform: capitalize;
   text-decoration: none;
   color: inherit;
+  transition: color 0.2s ease-in-out;
 
   &:hover,
   &:focus {
