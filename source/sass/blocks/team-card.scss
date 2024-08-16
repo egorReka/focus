@@ -1,0 +1,44 @@
+.team-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 30px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: $white;
+  border-radius: 20px;
+
+  @include media-desktop {
+    padding: 30px;
+  }
+}
+
+.team-card__image-wrapper {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.team-card__image {
+  display: block;
+  width: 100%;
+}
+
+.team-card__content {
+  text-align: center;
+
+  @include media-tablet {
+    text-align: start;
+  }
+}
+
+.team-card__title {
+  margin: 0 0 10px;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.team-card__text {
+  margin: 0;
+  font-weight: 600;
+  color: rgba($color: $text-secondary, $alpha: 0.5);
+}

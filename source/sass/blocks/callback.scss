@@ -1,0 +1,131 @@
+.callback {
+  padding: 20px;
+  margin: 0 auto;
+  font-size: clamp(18px, 1vw, 24px);
+  border-radius: 20px;
+  color: $white;
+
+  &--team {
+    background-color: $bg-button;
+  }
+
+  @include media-desktop {
+    height: 100%;
+    padding: 30px;
+  }
+}
+
+.callback__form {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 20px;
+  height: 100%;
+}
+
+.callback__title {
+  margin: 0;
+  font-size: clamp(18px, 2vw, 30px);
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.callback__wrapper {
+  display: grid;
+  gap: 10px;
+
+  @include media-desktop {
+    gap: 20px;
+  }
+}
+
+.callback__input {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+  color: inherit;
+  padding: 10px;
+  border: none;
+  background-color: rgba($color: $white, $alpha: 0.3);
+  cursor: pointer;
+
+  &::placeholder {
+    color: rgba($color: $text-button, $alpha: 0.5);
+  }
+
+  &:hover {
+    background-color: rgba($color: $white, $alpha: 0.5);
+  }
+
+  @include media-desktop {
+    padding: 13px;
+  }
+}
+
+.callback__label {
+  &--tel {
+    position: relative;
+    display: grid;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 7px;
+      transform: translateY(-50%);
+      border-radius: 12px 0 0 12px;
+      user-select: none;
+      content: "+7";
+
+      @include media-desktop {
+        left: 10px;
+      }
+    }
+
+    & .callback__input {
+      padding-left: 30px;
+
+      @include media-desktop {
+        padding-left: 35px;
+      }
+    }
+  }
+}
+
+.callback__select {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+  color: inherit;
+  padding: 10px;
+  border: none;
+  background-color: rgba($color: $white, $alpha: 0.3);
+  cursor: pointer;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  &:hover {
+    background-color: rgba($color: $white, $alpha: 0.5);
+  }
+
+  & option {
+    font-weight: 400;
+    font-size: clamp(14px, 2vw, 18px);
+    background-color: $bg-button;
+  }
+
+  @include media-desktop {
+    padding: 13px;
+  }
+}
+
+.callback__button {
+  align-self: flex-end;
+  display: block;
+  margin: 0 auto;
+  max-width: 430px;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+}

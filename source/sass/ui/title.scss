@@ -2,4 +2,9 @@
   font-weight: 700;
   font-size: clamp(32px, 5vw, 55px);
   line-height: 1;
+  text-align: center;
+
+  @include media-tablet {
+    text-align: start;
+  }
 }

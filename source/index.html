@@ -155,27 +155,120 @@
 
           <h2 class="team__title title">Кто работает в нашем центре?</h2>
 
-          <div class="team__wrapper swiper-team">
-            <ul class="team__list swiper-wrapper">
-              <li class="team__item swiper-slide">
+          <div class="team__wrapper team-swiper">
+            <ul class="team__list team-swiper__wrapper swiper-wrapper">
+
+              <li class="team__item team-swiper__slide swiper-slide">
                 <article class="team-card">
                   <div class="team-card__image-wrapper">
-                    <img class="team__image" src="./img/test.jpg" width="280" height="280" alt="!!!">
+                    <img class="team-card__image" src="./img/test.jpg" width="280" height="280" alt="!!!">
                   </div>
 
-                  <h3 class="team-card__title">Евгений Класс / Стаж 10 лет</h3>
-                  <p class="team-card__text">Европейская программа (продвинутый уровень)</p>
+                  <div class="team-card__content">
+                    <h3 class="team-card__title">Евгений Класс / Стаж 10 лет</h3>
+                    <p class="team-card__text">Европейская программа (продвинутый уровень)</p>
+                  </div>
                 </article>
               </li>
 
-              <li class="team__item swiper-slide">
+              <li class="team__item team-swiper__slide swiper-slide">
                 <article class="team-card">
                   <div class="team-card__image-wrapper">
-                    <img class="team__image" src="./img/test.jpg" width="280" height="280" alt="!!!">
+                    <img class="team-card__image" src="./img/test.jpg" width="280" height="280" alt="!!!">
                   </div>
 
-                  <h3 class="team-card__title">Евгений Класс / Стаж 10 лет</h3>
-                  <p class="team-card__text">Европейская программа (продвинутый уровень)</p>
+                  <div class="team-card__content">
+                    <h3 class="team-card__title">Евгений Класс / Стаж 10 лет</h3>
+                    <p class="team-card__text">Европейская программа (продвинутый уровень)</p>
+                  </div>
+                </article>
+              </li>
+
+              <li class="team__item team-swiper__slide swiper-slide">
+                <article class="team-card">
+                  <div class="team-card__image-wrapper">
+                    <img class="team-card__image" src="./img/test.jpg" width="280" height="280" alt="!!!">
+                  </div>
+
+                  <div class="team-card__content">
+                    <h3 class="team-card__title">Евгений Класс / Стаж 10 лет</h3>
+                    <p class="team-card__text">Европейская программа (продвинутый уровень)</p>
+                  </div>
+                </article>
+              </li>
+
+              <li class="team__item team-swiper__slide swiper-slide">
+                <article class="team-card">
+                  <div class="team-card__image-wrapper">
+                    <img class="team-card__image" src="./img/test.jpg" width="280" height="280" alt="!!!">
+                  </div>
+
+                  <div class="team-card__content">
+                    <h3 class="team-card__title">Евгений Класс / Стаж 10 лет</h3>
+                    <p class="team-card__text">Европейская программа (продвинутый уровень)</p>
+                  </div>
+                </article>
+              </li>
+
+              <li class="team__item team-swiper__slide swiper-slide">
+                <article class="team-card">
+                  <div class="team-card__image-wrapper">
+                    <img class="team-card__image" src="./img/test.jpg" width="280" height="280" alt="!!!">
+                  </div>
+
+                  <div class="team-card__content">
+                    <h3 class="team-card__title">Евгений Класс / Стаж 10 лет</h3>
+                    <p class="team-card__text">Европейская программа (продвинутый уровень)</p>
+                  </div>
+                </article>
+              </li>
+
+              <li class="team__item team-swiper__slide swiper-slide">
+                <article class="callback callback--team">
+                  <form class="callback__form" action="#" method="post" enctype="multipart/form-data">
+                    <h2 class="callback__title">Записаться на индвивидуальное занятие</h2>
+
+                    <div class="callback__wrapper">
+                      <label class="callback__label">
+                        <span class="visually-hidden">Ваше имя</span>
+                        <input class="callback__input" type="text" name="name" placeholder="Как вас зовут?" required>
+                      </label>
+
+                      <label class="callback__label callback__label--tel">
+                        <span class="visually-hidden">Ваш телефон</span>
+                        <input class="callback__input" type="tel" name="tel" placeholder="(999) 999-9999" required>
+                      </label>
+
+                      <label class="callback__label">
+                        <span class="visually-hidden">Возраст ученика</span>
+                        <input class="callback__input" type="number" name="age" placeholder="Сколько лет?" required>
+                      </label>
+
+                      <select class="callback__select" name="teacher" aria-label="Выберите школу">
+                        <option value="">Выберите преподавателя</option>
+                        <option value="1">teacher 1</option>
+                        <option value="2">teacher 2</option>
+                        <option value="3">teacher 3</option>
+                        <option value="4">teacher 4</option>
+                      </select>
+
+                      <select class="callback__select" name="direction" aria-label="Выберете направление">
+                        <option value="">Выберите Филиал</option>
+                        <option value="ballroom-dancing">Бальные танцы</option>
+                        <option value="jiu-jitsu">Джиу-джитсу</option>
+                        <option value="chess">Шахматы</option>
+                        <option value="acting-skills">Актерское мастерство</option>
+                        <option value="modern-dancing">Современные танцы</option>
+                        <option value="choreography">Хореография</option>
+                        <option value="gymnastics">Художественная гимнастика</option>
+                        <option value="baby-dance">Baby-dance</option>
+                      </select>
+
+                    </div>
+
+                    <button class="callback__button button button--white" type="submit">Записаться</button>
+
+                  </form>
                 </article>
               </li>
             </ul>

@@ -6,6 +6,7 @@
   border: none;
   user-select: none;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
   transition: opacity 0.3s ease-in-out;
 
   &:hover,
@@ -20,5 +21,10 @@
   &:disabled,
   &:not([type="button"]):not([type="submit"]):not([href]) {
     opacity: 0.3;
+  }
+
+  &--white {
+    background-color: $white;
+    color: $text;
   }
 }
