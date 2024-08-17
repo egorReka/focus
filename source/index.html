@@ -60,9 +60,9 @@
         </div>
 
         <button class="header__button nav-button button" type="button" aria-label="Открыть меню">
-          <div class="nav-button__wrapper">
+          <span class="nav-button__wrapper">
             <span class="nav-button__line"></span>
-          </div>
+          </span>
 
           <span class="nav-button__text">Меню</span>
         </button>
@@ -281,24 +281,43 @@
     <div class="container">
       <section class="gallery">
         <div class="gallery__wrapper">
-          <h2 class="gallery__title title">Галерея фото</h2>
-          <p class="gallery__text">Галерея фотоСпортсмены ТСК "Фокус" принимают участие в крупных соревнованиях не
-            только
-            в Москве, но и в России.</p>
-          <p class="gallery__text">Пробное занятие <strong class="gallery__text-strong">БЕСПЛАТНО</strong> по любому
-            направлению, представленному в Детском центре «Фокус»</p>
+          <div class="gallery__content">
+            <h2 class="gallery__title title">Галерея фото</h2>
+            <p class="gallery__text">Спортсмены ТСК "Фокус" принимают участие в крупных соревнованиях не
+              только
+              в Москве, но и в России.</p>
+            <p class="gallery__text">Пробное занятие <b class="gallery__text-strong">БЕСПЛАТНО</b> по любому
+              направлению, представленному в Детском центре «Фокус»</p>
+          </div>
+
+          <button class="gallery__button button" type="button">Записаться на занятие</button>
         </div>
 
-        <div class="gallery__slider swiper-gallery">
+        <div class="gallery__slider gallery-swiper swiper">
           <ul class="gallery__list swiper-wrapper">
+
             <li class="gallery__item swiper-slide">
-              <div class="gallery__image-wrapper">
-                <img class="gallery__image" src="./img/test.jpg" width="280" height="280" alt="!!!">
+              <div class="gallery-card">
+                <img class="gallery-card__image" src="./img/test.jpg" width="280" height="280" alt="!!!">
               </div>
             </li>
+
+            <li class="gallery__item swiper-slide">
+              <div class="gallery-card">
+                <img class="gallery-card__image" src="./img/test.jpg" width="280" height="280" alt="!!!">
+              </div>
+            </li>
+
+            <li class="gallery__item swiper-slide">
+              <div class="gallery-card">
+                <img class="gallery-card__image" src="./img/test.jpg" width="280" height="280" alt="!!!">
+              </div>
+            </li>
+
           </ul>
 
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination">
+          </div>
         </div>
       </section>
     </div>

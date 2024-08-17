@@ -2,11 +2,11 @@
   padding: 20px;
   margin: 0 auto;
   font-size: clamp(18px, 1vw, 24px);
-  border-radius: 20px;
+  border-radius: $second-radius;
   color: $white;
 
   &--team {
-    background-color: $bg-button;
+    background-color: $accent;
   }
 
   @include media-desktop {
@@ -112,7 +112,7 @@
   & option {
     font-weight: 400;
     font-size: clamp(14px, 2vw, 18px);
-    background-color: $bg-button;
+    background-color: $accent;
   }
 
   @include media-desktop {
@@ -126,6 +126,6 @@
   margin: 0 auto;
   max-width: 430px;
   padding: 15px 25px;
-  border-radius: 30px;
+  border-radius: $first-radius;
   font-weight: 600;
 }

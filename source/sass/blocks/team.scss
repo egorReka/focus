@@ -1,7 +1,7 @@
 .team {
   width: 100%;
   padding: 40px 0;
-  background-color: rgba($color: $bg-section, $alpha: 0.05);
+  background-color: $bg-section;
 
   @include media-tablet {
     padding: 50px 0;

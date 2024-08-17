@@ -14,6 +14,11 @@ $width-phone: 320px;
 $width-tablet: 768px;
 $width-desktop: 1440px;
 
+$first-radius: 30px;
+$second-radius: 20px;
+
+$padding: 20px;
+
 /* Margins */
 $Margins-phone: 15px;
 $Margins-tablet: 45px;
@@ -22,14 +27,14 @@ $Margins-desktop: 100px;
 
 /* Colors */
 $white: #ffffff;
+$accent: #cd52a8;
 
 
 /* Color space */
 $bg-page: #ffffff;
-$bg-section: #1d1d1b;
+$bg-section: #{rgba($color: #040403, $alpha: 0.05)};
 $text: #000000;
-$text-secondary: #1d1d1b;
+$text-secondary: #{rgba($color: #1d1d1b, $alpha: 0.5)};
 
-$bg-button: #cd52a8;
 $text-button: #ffffff;
 

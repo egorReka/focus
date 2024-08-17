@@ -6,7 +6,7 @@
   height: 100%;
   padding: 20px;
   background-color: $white;
-  border-radius: 20px;
+  border-radius: $second-radius;
 
   @include media-desktop {
     padding: 30px;
@@ -15,7 +15,7 @@
 
 .team-card__image-wrapper {
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: $second-radius;
 }
 
 .team-card__image {
@@ -40,5 +40,5 @@
 .team-card__text {
   margin: 0;
   font-weight: 600;
-  color: rgba($color: $text-secondary, $alpha: 0.5);
+  color: $text-secondary;
 }
