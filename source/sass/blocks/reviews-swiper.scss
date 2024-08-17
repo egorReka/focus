@@ -1,0 +1,16 @@
+.reviews-swiper {
+  .swiper-slide {
+    max-width: 280px;
+
+
+    @include media-tablet {
+      max-width: 350px;
+    }
+
+    @include media-desktop {
+      max-width: none;
+      width: 500px;
+    }
+  }
+}
+

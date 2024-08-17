@@ -40,13 +40,7 @@
   height: 100%;
 }
 
-// .page__main {
-  // display: grid;
-  // gap: 40px; // TODO добавить после удаления temp
-  // padding: 40px 0;
-// }
-
-// TODO temp, пока не подключу все swiper
-.main {
+.page__main {
+  padding: 0 0 40px;
   overflow-x: hidden;
 }

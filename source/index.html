@@ -324,68 +324,110 @@
 
     <section class="reviews">
 
-      <div class="container">
-        <header class="reviews__header">
-          <h2 class="reviews__title title">Отзывы</h2>
+      <!-- <div class="container"> -->
+      <header class="reviews__header">
+        <h2 class="reviews__title title">Отзывы</h2>
 
-          <div class="reviews__buttons">
-            <button class="reviews__button reviews__button--prev button" type="button"
-              aria-label="Предыдущий слайд"></button>
+        <div class="reviews__buttons">
+          <button class="reviews__button reviews__button--prev button" type="button" aria-label="Предыдущий слайд">
+            <svg class="reviews__button-icon" width="20" height="20">
+              <use href="/__spritemap#sprite-arrow-btn"></use>
+            </svg>
+          </button>
 
-            <button class="reviews__button reviews__button--next button" type="button"
-              aria-label="Следующий слайд"></button>
-          </div>
-        </header>
-      </div>
+          <button class="reviews__button reviews__button--next button" type="button" aria-label="Следующий слайд">
+            <svg class="reviews__button-icon" width="20" height="20">
+              <use href="/__spritemap#sprite-arrow-btn"></use>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <!-- </div> -->
 
-      <div class="reviews__wrapper swiper-reviews">
+      <div class="reviews__wrapper reviews-swiper">
         <ul class="reviews__list swiper-wrapper">
 
           <li class="reviews__item swiper-slide">
             <article class="reviews-card">
               <p class="reviews-card__text">Добрый день! Замечательный детский центр. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Dolores ut consectetur debitis commodi quisquam dolorum omnis cumque eius
-                quam autem, accusantium explicabo neque fugiat consequatur enim, officia distinctio dolorem sit!</p>
+                consectetur adipisicing elit. Dolores ut consectetur debitis commodi quisquam dolorum omnis</p>
 
-              <figure class="reviews-card__wrapper">
-                <img src="./img/test.jpg" width="60" height="60" alt="!!!">
-                <figcaption>
-                  <h3 class="reviews-card__title">Ольга Столярова</h3>
-                  <time class="reviews-card__date" datetime="2022-12-29">29 декабря 2022</time>
-                </figcaption>
-              </figure>
+              <div class="reviews-card__wrapper">
+                <figure class="reviews-card__figure">
+                  <img class="reviews-card__image" src="./img/test.jpg" width="60" height="60" alt="!!!">
+                  <figcaption class="reviews-card__figcaption">
+                    <h3 class="reviews-card__title">Ольга Столярова</h3>
+                    <time class="reviews-card__date" datetime="2022-12-29">29 декабря 2022</time>
+                  </figcaption>
+                </figure>
+
+                <svg class="reviews-card__icon" role="img" width="32" height="32" aria-label="Отзыв с Яндекса.">
+                  <use href="/__spritemap#sprite-ya"></use>
+                </svg>
+              </div>
             </article>
           </li>
 
           <li class="reviews__item swiper-slide">
             <article class="reviews-card">
               <p class="reviews-card__text">Добрый день! Замечательный детский центр. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Dolores ut consectetur debitis commodi quisquam dolorum omnis cumque eius
-                quam autem, accusantium explicabo neque fugiat consequatur enim, officia distinctio dolorem sit!</p>
+                consectetur adipisicing elit. Dolores ut consectetur debitis commodi quisquam dolorum omnis</p>
 
-              <figure class="reviews-card__wrapper">
-                <img src="./img/test.jpg" width="60" height="60" alt="!!!">
-                <figcaption>
-                  <h3 class="reviews-card__title">Ольга Столярова</h3>
-                  <time class="reviews-card__date" datetime="2022-12-29">29 декабря 2022</time>
-                </figcaption>
-              </figure>
+              <div class="reviews-card__wrapper">
+                <figure class="reviews-card__figure">
+                  <img class="reviews-card__image" src="./img/test.jpg" width="60" height="60" alt="!!!">
+                  <figcaption class="reviews-card__figcaption">
+                    <h3 class="reviews-card__title">Ольга Столярова</h3>
+                    <time class="reviews-card__date" datetime="2022-12-29">29 декабря 2022</time>
+                  </figcaption>
+                </figure>
+
+                <svg class="reviews-card__icon" role="img" width="32" height="32" aria-label="Отзыв с Яндекса.">
+                  <use href="/__spritemap#sprite-ya"></use>
+                </svg>
+              </div>
             </article>
           </li>
 
           <li class="reviews__item swiper-slide">
             <article class="reviews-card">
               <p class="reviews-card__text">Добрый день! Замечательный детский центр. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Dolores ut consectetur debitis commodi quisquam dolorum omnis cumque eius
-                quam autem, accusantium explicabo neque fugiat consequatur enim, officia distinctio dolorem sit!</p>
+                consectetur adipisicing elit. Dolores ut consectetur debitis commodi quisquam dolorum omnis</p>
 
-              <figure class="reviews-card__wrapper">
-                <img src="./img/test.jpg" width="60" height="60" alt="!!!">
-                <figcaption>
-                  <h3 class="reviews-card__title">Ольга Столярова</h3>
-                  <time class="reviews-card__date" datetime="2022-12-29">29 декабря 2022</time>
-                </figcaption>
-              </figure>
+              <div class="reviews-card__wrapper">
+                <figure class="reviews-card__figure">
+                  <img class="reviews-card__image" src="./img/test.jpg" width="60" height="60" alt="!!!">
+                  <figcaption class="reviews-card__figcaption">
+                    <h3 class="reviews-card__title">Ольга Столярова</h3>
+                    <time class="reviews-card__date" datetime="2022-12-29">29 декабря 2022</time>
+                  </figcaption>
+                </figure>
+
+                <svg class="reviews-card__icon" role="img" width="32" height="32" aria-label="Отзыв с Яндекса.">
+                  <use href="/__spritemap#sprite-ya"></use>
+                </svg>
+              </div>
+            </article>
+          </li>
+
+          <li class="reviews__item swiper-slide">
+            <article class="reviews-card">
+              <p class="reviews-card__text">Добрый день! Замечательный детский центр. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Dolores ut consectetur debitis commodi quisquam dolorum omnis</p>
+
+              <div class="reviews-card__wrapper">
+                <figure class="reviews-card__figure">
+                  <img class="reviews-card__image" src="./img/test.jpg" width="60" height="60" alt="!!!">
+                  <figcaption class="reviews-card__figcaption">
+                    <h3 class="reviews-card__title">Ольга Столярова</h3>
+                    <time class="reviews-card__date" datetime="2022-12-29">29 декабря 2022</time>
+                  </figcaption>
+                </figure>
+
+                <svg class="reviews-card__icon" role="img" width="32" height="32" aria-label="Отзыв с Яндекса.">
+                  <use href="/__spritemap#sprite-ya"></use>
+                </svg>
+              </div>
             </article>
           </li>
 
