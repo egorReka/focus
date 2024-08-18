@@ -38,6 +38,7 @@
 
             <div class="header__wrapper">
               <a class="header__phone" href="tel:+79168887580">+7 (916) 888-75-80</a>
+
               <ul class="header__social social">
                 <li class="social__item">
                   <a class="social__link" href="https://taplink.cc/fokus_dance_club">
@@ -54,6 +55,7 @@
                   </a>
                 </li>
               </ul>
+
               <button class="header__button-record button" type="button">Записаться</button>
             </div>
           </div>
@@ -82,16 +84,20 @@
           <div class="hero__swiper hero-swiper">
             <ul class="hero__list swiper-wrapper">
               <li class="hero__item swiper-slide">
-                <img class="hero__image" src="./img/hero/hero-1-mobile@1x.jpg" width="280" height="169" alt="">
+                <img class="hero__image" src="./img/hero/hero-1-mobile@1x.jpg" width="280" height="169" alt=""
+                  style="object-position: 62% 0">
               </li>
               <li class="hero__item swiper-slide">
-                <img class="hero__image" src="./img/hero/hero-2-mobile@1x.jpg" width="280" height="169" alt="">
+                <img class="hero__image" src="./img/hero/hero-2-mobile@1x.jpg" width="280" height="169" alt=""
+                  style="object-position: 89% 0;">
               </li>
               <li class="hero__item swiper-slide">
-                <img class="hero__image" src="./img/hero/hero-3-mobile@1x.jpg" width="280" height="169" alt="">
+                <img class="hero__image" src="./img/hero/hero-3-mobile@1x.jpg" width="280" height="169" alt=""
+                  style="object-position: 7% 0">
               </li>
               <li class="hero__item swiper-slide">
-                <img class="hero__image" src="./img/hero/hero-4-mobile@1x.jpg" width="280" height="169" alt="">
+                <img class="hero__image" src="./img/hero/hero-4-mobile@1x.jpg" width="280" height="169" alt=""
+                  style="object-position: 34% 0">
               </li>
             </ul>
           </div>
@@ -438,10 +444,71 @@
 
   <footer class="footer">
     <div class="container">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, iure! Quia deleniti aliquid
-      quas accusamus optio nam vitae, cumque, excepturi magnam voluptas officiis at voluptatem ad laboriosam itaque, vel
-      facere!
+      <section class="footer__conteiner">
+
+        <div class="footer__header">
+          <img class="footer__logo" src="img/logo.png" width="137" height="32" alt="Детский центр Фокус">
+          <h2 class="footer__title">Профессиональная школа танцев для детей и взрослых</h2>
+        </div>
+
+        <a class="footer__link" href="tel:+79168887580">+7 (916) 888-75-80</a>
+        <a class="footer__link" href="mailto:focusdanceclub@gmail.com">focusdanceclub@gmail.com</a>
+
+        <ul class="footer__social social">
+
+          <li class="social__item">
+            <a class="social__link" href="https://taplink.cc/fokus_dance_club">
+              <svg class="social__icon" role="img" width="32" height="32" aria-label="Сылка на Телеграм.">
+                <use href="/__spritemap#sprite-tg"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/dancefocus">
+              <svg class="social__icon" role="img" width="32" height="32" aria-label="Сылка на Вконтакте.">
+                <use href="/__spritemap#sprite-vk"></use>
+              </svg>
+            </a>
+
+          </li>
+        </ul>
+
+        <div class="footer__nav">
+          <h3 class="footer__nav-title">Навигация по сайту</h3>
+
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Направления</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Филиалы</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Оплата</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Отзывы</a></li>
+
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Тренеры</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Правила школы</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">О нас</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__map">
+          <iframe class="footer__map-iframe"
+            src="https://yandex.ru/map-widget/v1/?lang=ru_RU&amp;scroll=true&amp;source=constructor-api&amp;um=constructor%3Ab636e149e8831a219bfcad7cd994ace8aa347c7381ee14bb7a06746fb478e2df"
+            frameborder="0" allowfullscreen="true" width="402px" height="240px" style="display: block;">
+          </iframe>
+          <address class="footer__address">Москва, Лесная ул., 20, корп. 2, рабочий посёлок Боброво</address>
+        </div>
+
+      </section>
     </div>
+
+    <hr class="footer__hr">
+
+    <div class="footer__copyright">
+      <div class="container">
+        <p class="footer__copyright-text">© 2024 Focus Dance Club. <br> Все права защищены.</p>
+      </div>
+    </div>
+
   </footer>
 
   <script src="js/main.js" type="module"></script>
