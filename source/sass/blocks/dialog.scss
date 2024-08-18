@@ -1,36 +1,37 @@
-.callback {
-  padding: 20px;
-  margin: 0 auto;
-  font-size: clamp(18px, 1vw, 24px);
+.dialog  {
+  border: none;
+  padding: 0;
+  background-color: gr;
   border-radius: $second-radius;
+  font-size: clamp(18px, 1vw, 24px);
+  background-color: $white;
+  color: $text;
+}
 
-  &--team {
-    background-color: $accent;
-    color: $white;
-  }
+.dialog__container {
+  position: relative;
+  padding: 25px;
 
-  @include media-desktop {
-    height: 100%;
+  @include media-tablet {
     padding: 30px;
   }
 }
 
-.callback__form {
+.dialog__form {
   display: grid;
-  grid-template-rows: auto auto 1fr;
+  grid-template-columns: minmax(240px, 320px);
   gap: 20px;
-  height: 100%;
 }
 
-.callback__title {
+.dialog__title {
   margin: 0;
-  font-size: clamp(18px, 2vw, 30px);
-  font-weight: 500;
+  font-size: clamp(20px, 3vw, 32px);
+  font-weight: 600;
   line-height: 1.2;
   text-align: center;
 }
 
-.callback__wrapper {
+.dialog__wrapper {
   display: grid;
   gap: 10px;
 
@@ -39,22 +40,22 @@
   }
 }
 
-.callback__input {
+.dialog__input {
   display: block;
   width: 100%;
   border-radius: 12px;
   color: inherit;
   padding: 10px;
   border: none;
-  background-color: rgba($color: $white, $alpha: 0.3);
+  background-color: $bg-section;
   cursor: pointer;
 
   &::placeholder {
-    color: rgba($color: $text-button, $alpha: 0.5);
+    color: $text-secondary;
   }
 
   &:hover {
-    background-color: rgba($color: $white, $alpha: 0.5);
+    background-color: $bg-section-hover;
   }
 
   @include media-desktop {
@@ -62,7 +63,7 @@
   }
 }
 
-.callback__label {
+.dialog__label {
   &--tel {
     position: relative;
     display: grid;
@@ -81,7 +82,7 @@
       }
     }
 
-    & .callback__input {
+    & .dialog__input {
       padding-left: 30px;
 
       @include media-desktop {
@@ -91,14 +92,14 @@
   }
 }
 
-.callback__select {
+.dialog__select {
   display: block;
   width: 100%;
   border-radius: 12px;
   color: inherit;
   padding: 10px;
   border: none;
-  background-color: rgba($color: $white, $alpha: 0.3);
+  background-color: $bg-section;
   cursor: pointer;
 
   text-overflow: ellipsis;
@@ -106,13 +107,13 @@
   overflow: hidden;
 
   &:hover {
-    background-color: rgba($color: $white, $alpha: 0.5);
+    background-color: $bg-section-hover;
   }
 
   & option {
     font-weight: 400;
     font-size: clamp(14px, 2vw, 18px);
-    background-color: $accent;
+    background-color: $bg-section-hover;
   }
 
   @include media-desktop {
@@ -120,7 +121,7 @@
   }
 }
 
-.callback__button {
+.dialog__button {
   align-self: flex-end;
   display: block;
   margin: 0 auto;
@@ -128,4 +129,37 @@
   padding: 15px 25px;
   border-radius: $first-radius;
   font-weight: 600;
+}
+
+.dialog__close {
+  position: absolute;
+  display: grid;
+  place-content: center;
+  top: 10px;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  padding: 3px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    width: 16px;
+    height: 2px;
+    border-radius: 4px;
+    background-color: $white;
+    z-index: 1;
+    content: "";
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }

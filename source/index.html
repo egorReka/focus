@@ -56,7 +56,7 @@
                 </li>
               </ul>
 
-              <button class="header__button-record button" type="button">Записаться</button>
+              <button class="header__button-record button button-modal" type="button">Записаться</button>
             </div>
           </div>
         </div>
@@ -296,7 +296,7 @@
               направлению, представленному в Детском центре «Фокус»</p>
           </div>
 
-          <button class="gallery__button button" type="button">Записаться на занятие</button>
+          <button class="gallery__button button button-modal" type="button">Записаться на занятие</button>
         </div>
 
         <div class="gallery__slider gallery-swiper swiper">
@@ -491,10 +491,10 @@
         </div>
 
         <div class="footer__map">
-          <iframe class="footer__map-iframe"
+          <!-- <iframe class="footer__map-iframe"
             src="https://yandex.ru/map-widget/v1/?lang=ru_RU&amp;scroll=true&amp;source=constructor-api&amp;um=constructor%3Ab636e149e8831a219bfcad7cd994ace8aa347c7381ee14bb7a06746fb478e2df"
             frameborder="0" allowfullscreen="true" width="402px" height="240px" style="display: block;">
-          </iframe>
+          </iframe> -->
           <address class="footer__address">Москва, Лесная ул., 20, корп. 2, рабочий посёлок Боброво</address>
         </div>
 
@@ -510,6 +510,56 @@
     </div>
 
   </footer>
+
+  <dialog class="dialog" id="dialog" aria-labelledby="dialog-name">
+    <div class="dialog__container">
+      <form class="dialog__form" action="#" method="post" enctype="multipart/form-data">
+        <h2 class="dialog__title" id="dialog-name">Записаться на индвивидуальное занятие</h2>
+
+        <div class="dialog__wrapper">
+          <label class="dialog__label">
+            <span class="visually-hidden">Ваше имя</span>
+            <input class="dialog__input" type="text" name="name" placeholder="Как вас зовут?" required>
+          </label>
+          <label class="dialog__label dialog__label--tel">
+            <span class="visually-hidden">Ваш телефон</span>
+            <input class="dialog__input" type="tel" name="tel" placeholder="(999) 999-9999" required>
+          </label>
+          <label class="dialog__label">
+            <span class="visually-hidden">Возраст ученика</span>
+            <input class="dialog__input" type="number" name="age" placeholder="Сколько лет?" required>
+          </label>
+
+          <select class="dialog__select" name="teacher" aria-label="Выберите школу">
+            <option value="">Выберите преподавателя</option>
+            <option value="1">teacher 1</option>
+            <option value="2">teacher 2</option>
+            <option value="3">teacher 3</option>
+            <option value="4">teacher 4</option>
+          </select>
+
+          <select class="dialog__select" name="direction" aria-label="Выберете направление">
+            <option value="">Выберите Филиал</option>
+            <option value="ballroom-dancing">Бальные танцы</option>
+            <option value="jiu-jitsu">Джиу-джитсу</option>
+            <option value="chess">Шахматы</option>
+            <option value="acting-skills">Актерское мастерство</option>
+            <option value="modern-dancing">Современные танцы</option>
+            <option value="choreography">Хореография</option>
+            <option value="gymnastics">Художественная гимнастика</option>
+            <option value="baby-dance">Baby-dance</option>
+          </select>
+        </div>
+
+        <button class="dialog__button button " type="submit">Записаться</button>
+
+      </form>
+
+      <button class="dialog__close button" id="modal-close" type="button" aria-label="Закрыть окно"></button>
+    </div>
+
+  </dialog>
+
 
   <script src="js/main.js" type="module"></script>
 </body>
