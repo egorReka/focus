@@ -103,11 +103,13 @@
 
 .footer__nav-list {
   @include reset-list;
+
   columns: 2;
 }
 
 .footer__nav-link {
   @include reset-link;
+
   display: block;
   padding: 5px;
   font-size: 20px;

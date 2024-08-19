@@ -97,6 +97,7 @@
   &:hover,
   &:focus {
     text-shadow: $white 1px 0 10px;
+
     &::after {
       transform: rotate(0deg);
     }

@@ -1,4 +1,4 @@
-const regexNewLine = '/^\s*[\r\n]/gm';
+const regexNewLine = '/^s*[\r\n]/gm';
 
 const setTelegram = {
   token: '7345767493:AAHBntzKNm71von_T2_mpModNnVs_NTi7tQ', // Your bot's token that got from @BotFather

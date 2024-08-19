@@ -14,7 +14,7 @@
   }
 }
 
-.nav-button--active .nav-button__wrapper  {
+.nav-button--active .nav-button__wrapper {
   grid-template-rows: auto;
 
   &::before {
@@ -52,5 +52,5 @@
   background-color: $white;
   border-radius: 2px;
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-  content: '';
+  content: "";
 }

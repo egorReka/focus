@@ -85,7 +85,7 @@
             <ul class="hero__list swiper-wrapper">
               <li class="hero__item swiper-slide">
                 <img class="hero__image" src="./img/hero/hero-1-mobile@1x.jpg" width="280" height="169" alt=""
-                  style="object-position: 62% 0">
+                  style="object-position: 62% 0"> <!-- TODO style убрать в css -->
               </li>
               <li class="hero__item swiper-slide">
                 <img class="hero__image" src="./img/hero/hero-2-mobile@1x.jpg" width="280" height="169" alt=""
@@ -519,17 +519,15 @@
         <div class="dialog__wrapper">
           <label class="dialog__label">
             <span class="visually-hidden">Ваше имя</span>
-            <input class="dialog__input input" type="text" name="name" placeholder="Как вас зовут?" required min="2">
+            <input class="dialog__input input" type="text" name="name" placeholder="Как вас зовут?" required>
           </label>
           <label class="dialog__label dialog__label--tel">
             <span class="visually-hidden">Ваш телефон</span>
-            <input class="dialog__input input" type="tel" name="phone" placeholder="(999) 999-9999" required max="9"
-              min="9">
+            <input class="dialog__input input" type="tel" name="phone" placeholder="(999) 999-9999" required>
           </label>
           <label class="dialog__label">
             <span class="visually-hidden">Возраст ученика</span>
-            <input class="dialog__input input" type="number" name="age" placeholder="Сколько лет?" required min="3"
-              max="99">
+            <input class="dialog__input input" type="number" name="age" placeholder="Сколько лет?" required>
           </label>
 
           <select class="dialog__select" name="teacher" aria-label="Выберите школу">
@@ -568,7 +566,6 @@
 
 </html>
 
-
 <!-- <picture>
   <source type="image/webp" media="(min-width: 1440px)"
     srcset="img/hero/hero-1-desktop@1x.webp, img/hero/hero-1-desktop@2x.webp 2x" width="1360" height="600">
@@ -584,6 +581,5 @@
   <img class="reviews-card__image" src="img/hero/hero-1-mobile@1x.jpg"
     srcset="img/hero/hero-1-mobile@2x.jpg 2x" width="280" height="169" alt="">
 </picture> -->
-
 
 <!-- TODO править все размеры картинок -->

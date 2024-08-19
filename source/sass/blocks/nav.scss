@@ -34,6 +34,7 @@
 
 .nav__list {
   @include reset-list;
+
   display: grid;
   align-items: center;
   justify-content: flex-start;

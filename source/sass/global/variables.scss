@@ -2,7 +2,6 @@
 // $font-family: "Geologica", "Arial", sans-serif;
 $font-family: "TildaSans", "Arial", sans-serif; //TODO добавить шрифты
 
-
 /* Font weight */
 $font-weight-light: 300;
 $font-weight-regular: 400;
@@ -13,22 +12,13 @@ $font-weight-bold: 700;
 $width-phone: 320px;
 $width-tablet: 768px;
 $width-desktop: 1440px;
-
 $first-radius: 30px;
 $second-radius: 20px;
-
 $padding: 20px;
-
-/* Margins */
-$Margins-phone: 15px;
-$Margins-tablet: 45px;
-$Margins-desktop: 100px;
-
 
 /* Colors */
 $white: #ffffff;
 $accent: #cd52a8;
-
 
 /* Color space */
 $bg-page: #ffffff;
@@ -36,6 +26,4 @@ $bg-section: #{rgba($color: #040403, $alpha: 0.05)};
 $bg-section-hover: #{rgba($color: #040403, $alpha: 0.08)};
 $text: #000000;
 $text-secondary: #{rgba($color: #1d1d1b, $alpha: 0.5)};
-
 $text-button: #ffffff;
-

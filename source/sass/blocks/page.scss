@@ -26,9 +26,11 @@
 
 .page__header {
   width: 100%;
-  max-width: 100%;
+  // stylelint-disable-line
   min-height: 100vh;
+  // stylelint-disable-line
   min-height: 100svh;
+  max-width: 100%;
   min-height: -webkit-fit-available;
   overflow-x: hidden;
   scrollbar-width: thin;
