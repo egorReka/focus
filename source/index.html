@@ -513,21 +513,23 @@
 
   <dialog class="dialog" id="dialog" aria-labelledby="dialog-name">
     <div class="dialog__container">
-      <form class="dialog__form" action="#" method="post" enctype="multipart/form-data">
+      <form class="dialog__form form" action="/" method="post" enctype="multipart/form-data">
         <h2 class="dialog__title" id="dialog-name">Записаться на индвивидуальное занятие</h2>
 
         <div class="dialog__wrapper">
           <label class="dialog__label">
             <span class="visually-hidden">Ваше имя</span>
-            <input class="dialog__input" type="text" name="name" placeholder="Как вас зовут?" required>
+            <input class="dialog__input input" type="text" name="name" placeholder="Как вас зовут?" required min="2">
           </label>
           <label class="dialog__label dialog__label--tel">
             <span class="visually-hidden">Ваш телефон</span>
-            <input class="dialog__input" type="tel" name="tel" placeholder="(999) 999-9999" required>
+            <input class="dialog__input input" type="tel" name="phone" placeholder="(999) 999-9999" required max="9"
+              min="9">
           </label>
           <label class="dialog__label">
             <span class="visually-hidden">Возраст ученика</span>
-            <input class="dialog__input" type="number" name="age" placeholder="Сколько лет?" required>
+            <input class="dialog__input input" type="number" name="age" placeholder="Сколько лет?" required min="3"
+              max="99">
           </label>
 
           <select class="dialog__select" name="teacher" aria-label="Выберите школу">

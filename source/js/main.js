@@ -12,6 +12,7 @@ import { initSwiperGallery } from './swiper-gallery';
 import { initSwiperReviews } from './swiper-reviews';
 import { setModal } from './modal';
 import { sendMessage } from './send-form-tg';
+import { initFormValidation } from './validation-form';
 
 const openModalButtons = document.querySelectorAll('.button-modal');
 
@@ -21,3 +22,4 @@ initSwiperTeam(Swiper);
 initSwiperGallery(Swiper, Pagination);
 initSwiperReviews(Swiper, Navigation);
 openModalButtons.forEach((button) => setModal(button));
+initFormValidation(sendMessage);

@@ -54,8 +54,14 @@
     color: $text-secondary;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $bg-section-hover;
+  }
+
+  &--error {
+    background-color: rgba($color: red, $alpha: 0.3);
+    outline: 1px solid red;
   }
 
   @include media-desktop {
