@@ -10,7 +10,7 @@ export default {
       injectSVGOnDev: true,
     }),
     // input https://www.npmjs.com/package/html-minifier-terser options
-    ViteMinifyPlugin({}),
+    // ViteMinifyPlugin({}),
     ViteImageOptimizer({
       test: /\.(jpe?g|png)$/i,
       includePublic: false,
