@@ -10,33 +10,33 @@ export default {
       injectSVGOnDev: true,
     }),
     // input https://www.npmjs.com/package/html-minifier-terser options
-    // ViteMinifyPlugin({}),
+    ViteMinifyPlugin({}),
     ViteImageOptimizer({
-      test: /\.(jpe?g|png|svg)$/i,
+      test: /\.(jpe?g|png)$/i,
       includePublic: false,
       logStats: true,
       ansiColors: true,
-      svg: {
-        multipass: true,
-        plugins: [
-          {
-            name: 'preset-default',
-            params: {
-              overrides: {
-                cleanupNumericValues: false,
-                convertPathData: {
-                  floatPrecision: 2,
-                  forceAbsolutePath: false,
-                  utilizeAbsolute: false,
-                },
-                removeViewBox: false, // https://github.com/svg/svgo/issues/1128
-                cleanupIds: false,
-              },
-            },
-          },
-          'removeDimensions',
-        ],
-      },
+      // svg: {
+      //   multipass: true,
+      //   plugins: [
+      //     {
+      //       name: 'preset-default',
+      //       params: {
+      //         overrides: {
+      //           cleanupNumericValues: false,
+      //           convertPathData: {
+      //             floatPrecision: 2,
+      //             forceAbsolutePath: false,
+      //             utilizeAbsolute: false,
+      //           },
+      //           removeViewBox: false, // https://github.com/svg/svgo/issues/1128
+      //           cleanupIds: false,
+      //         },
+      //       },
+      //     },
+      //     'removeDimensions',
+      //   ],
+      // },
       png: {
         // https://sharp.pixelplumbing.com/api-output#png
         quality: 80,
